@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prototype</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- 전체를 감싸는 dc_wrap -->
+  <div class="dc_wrap">
+
+    <!-- pc, 모바일 혼재 영역 -->
+    <div class="dc_pop-container">
+
+      <!-- 가이드 팝업 -->
+      <div class="dc_header">
+
+        <div class="dc_tit">
+    
+          <img class="logo" src="./images/logo.png" alt="위글위글 X 엘지유플러스">
+          <img class="main_tit" src="./images/main_tit.png" alt="mbt-i 이벤트 (My Background Type for iPhone 14)">
+          <img class="sub_tit" src="./images/sub_tit.png" alt="내 개성을 '돋'보이게 해줄 나만의 아이폰 배경화면 가장 FUN 하게 꾸민 분에게는 아이폰14를 포함 다양한 경품을 드려요">
+        
+        </div>
+      
+        <div class="cont_tit">
+          <ul>
+            <li>
+              <em>STEP1</em>
+              <span>내가 원하는 기본 배경 OR 사진 선택(4:5비율)</span>
+            </li>
+            <li>
+              <em>STEP2</em>
+              <span>내 마음에 드는 스티커 &amp; 텍스트 추가해서 배경꾸미기</span>
+            </li>
+            <li>
+              <em>STEP3</em>
+              <span>인스타그램에 태그 작성해서 올리면 이벤트 참여 끝!</span> 
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+
+      <!-- 꾸밈 관련 영역 -->
+      <div class="dc_area">
+
+        <!-- 꾸며지는 영역(pc 좌측) -->
+        <div class="dc_zone">
+          <!-- 배경, 스티커, 텍스트 추가 영역 -->
+          <div class="dc_deco-zone" style="background-image: url(./images/bg_img01.jpg);">
+            <p class="intro">
+              배경화면을 꾸며주세요
+            </p>
+          </div>
+          <div class="alert" id="alert01">
+            <div class="alert_wrap">
+              <div class="alert_inner">
+                <img src="./images/ico_alert.svg" alt="느낌표">
+                배경화면을 꾸며주세요
+              </div>
+              <button onclick="$('#alert01').hide();"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 꾸미는 도구 영역(pc에서 우측에 위치) -->
+        <div class="dc_deco">
+          <!-- 모바일 팝업(pc 기본 노출) -->
+          <div class="dc_pop dc_back-image--container">
+
+            <!-- pc 전용 title -->
+            <h2 class="dc_title--pc">배경</h2>
+
+            <ul>
+              <li>
+                <input type="radio" name="back-image-radio" value="image1" id="image1">
+                <label for="image1">
+                  <img src="./images/bg_img01.jpg">
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="back-image-radio" value="image2" id="image2">
+                <label for="image2">
+                  <img src="./images/bg_img02.jpg">
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="back-image-radio" value="image3" id="image3">
+                <label for="image3">
+                  <img src="./images/bg_img03.jpg">
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="back-image-radio" value="image4" id="image4">
+                <label for="image4">
+                  <img src="./images/bg_img04.jpg">
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="back-image-radio" value="image5" id="image5">
+                <label for="image5">
+                  <img src="./images/bg_img05.jpg">
+                </label>
+              </li>
+            </ul>
+            <button class="dc_close blind--pc">
+              <img src="./images/btn/btn_close_white.svg">
+            </button>
+          </div>
+
+          <!-- pc 전용 이미지 파일 업로드 버튼 -->
+          <div class="dc_upload--container blind--mobile">
+            <button class="dc_upload-button">
+              <label for="file">
+                PC에서 사진 불러오기
+                <div class="btn-upload"><i class="dc_button-icon"></i></div>
+              </label>
+              <input type="file" name="file" id="file" accept="file_extension|audio/*|video/*|image/*|media_type" disabled>
+            </button>
+          </div>
+
+          <div class="dc_pop dc_sticker--container">
+
+            <!-- pc 전용 title -->
+            <h2 class="dc_title--pc">스티커</h2>
+
+            <ul>
+              <li><button><img src="./images/sticker/sticker01.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker02.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker03.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker04.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker05.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker06.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker07.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker08.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker09.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker10.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker11.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker12.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker13.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker14.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker15.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker16.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker17.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker18.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker19.svg"/></button></li>
+              <li><button><img src="./images/sticker/sticker20.svg"/></button></li>
+            </ul>
+            <button class="dc_close blind--pc">
+              <img src="./images/btn/btn_close_white.svg">
+            </button>
+          </div>
+
+          <div class="dc_text-deco--container">
+
+            <!-- pc 전용 title -->
+            <h2 class="dc_title--pc">텍스트</h2>
+            
+            <div class="dc_pop dc_input--container">
+
+              <!-- pc 전용 title -->
+              <h3 class="dc_sub-title--pc">텍스트 입력</h3>
+
+              <textarea class="input-area" placeholder="텍스트를 입력해주세요."></textarea>
+              <button class="dc_complete dc_close text">
+                완료
+              </button>
+              <button class="dc_complete dc_close blind--pc">
+                <img src="./images/btn/btn_close_white.svg">
+              </button>
+
+            </div>
+
+            <div class="dc_pop dc_text-color-size-container">
+            <div class="dc_text-color--container">
+              <h3 class="dc_sub-title--pc">색상</h3>
+              <ul>
+                <li>
+                  <input type="radio" name="text-color-radio" value="red" id="red">
+                  <label for="red" style="background-color: red;"></label>
+                </li>
+                <li>
+                  <input type="radio" name="text-color-radio" value="orange" id="orange">
+                  <label for="orange" style="background-color: orange;"></label>
+                </li>
+                <li>
+                  <input type="radio" name="text-color-radio" value="yellow" id="yellow">
+                  <label for="yellow" style="background-color: yellow;"></label>
+                </li>
+                <li>
+                  <input type="radio" name="text-color-radio" value="green" id="green">
+                  <label for="green" style="background-color: green;"></label>
+                </li>
+                <li>
+                  <input type="radio" name="text-color-radio" value="blue" id="blue">
+                  <label for="blue" style="background-color: blue;"></label>
+                </li>
+                <li>
+                  <input type="radio" name="text-color-radio" value="indigo" id="indigo">
+                  <label for="indigo" style="background-color: indigo;"></label>
+                </li>
+                <li>
+                  <input type="radio" name="text-color-radio" value="purple" id="purple">
+                  <label for="purple" style="background-color: purple;"></label>
+                </li>
+                <li>
+                  <input type="radio" name="text-color-radio" value="gray" id="gray">
+                  <label for="gray" style="background-color: gray;"></label>
+                </li>
+                <li>
+                  <input type="radio" name="text-color-radio" value="black" id="black">
+                  <label for="black" style="background-color: black;"></label>
+                </li>
+                <li>
+                  <input type="radio" name="text-color-radio" value="white" id="white">
+                  <label for="white" style="background-color: white;"></label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="dc_text-size--container">
+              <h3 class="dc_sub-title--pc">크기</h3>
+              <ul>
+                <li>
+                  <input type="radio" name="text-size-radio" value="40px" id="40px">
+                  <label for="40px">01</label>
+                </li>
+                <li>
+                  <input type="radio" name="text-size-radio" value="70px" id="70px">
+                  <label for="70px">02</label>
+                </li>
+                <li>
+                  <input type="radio" name="text-size-radio" value="100px" id="100px">
+                  <label for="100px">03</label>
+                </li>
+              </ul>
+            </div>
+            <button class="dc_close blind--pc">
+              <img src="./images/btn/btn_close_black.svg">
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dc_footer">
+
+      <div class="dc_hashtag">
+        <strong>이벤트 참여 필수 해시태그</strong>
+        <ul>
+          <li>#유플러스</li>
+          <li>#아이폰14</li>
+          <li>#MBT_i</li>
+          <li>#유플펀</li>
+        </ul>
+        <i>* 이벤트 응모 시 자동 복사 됩니다.</i>
+      </div>
+    
+      <div class="dc_complete">
+        <button><img src="./images/btn/btn_pc_bottom.png" alt="배경 저장하고 이벤트 응모하기"></button>
+        <span>
+          모든 저작물은 초상권, 지적재산권, 저작권 등의 법리적 문제가 전혀 없어야 하며<br>
+          문제가 있을 시 수상에서 제외될 수 있습니다 
+        </span>
+      </div>
+      
+    </div>
+  </div>
+  <div class="dim">
+  <div class="alert" id="alert02">
+    <div class="layer_pop">
+      <div class="layer_pop_inner">
+        <div><img src="./images/icon/ico_complete.svg" alt="체크표시"></div>
+        이미지가 저장되고 해시태그가<br>복사되었습니다. 인스타그램에 게재하여야<br>이벤트에 응모됩니다.
+      </div>
+      <button id="hashtagbtn">확인</button>
+    </div>
+  </div>
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/Scene.min.js"></script>
+  <script src="./js/Moveable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
