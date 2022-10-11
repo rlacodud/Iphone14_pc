@@ -108,7 +108,7 @@ $('.dc_back-image--container label').off().on('click touchstart', function (e) {
 
   // dc_deco-zone의 백그라운드로 설정
   $('.dc_deco-zone').css('background-color', 'none');
-  $('.dc_deco-zone').css('background-image', `url(.${bgVal})`);
+  $('.dc_deco-zone').css('background-image', `url(https://rlacodud.github.io/Iphone14_pc/images/${bgVal})`);
 
   notImg = false;
 })
