@@ -103,11 +103,12 @@ $('.dc_back-image--container label').off().on('click touchstart', function (e) {
   $('.dc_guid-text--container').addClass('off');
 
   // 해당 이미지의 value값을 받아와
-  let bgVal = $(this).children('img').attr("src");
+  let bgVal = $(this).prev('input').val();
 
   // dc_deco-zone의 백그라운드로 설정
   $('.dc_deco-zone').css('background-color', 'none');
-  $('.dc_deco-zone').css('background-image', `url(https://rlacodud.github.io/Iphone14_pc/images/${bgVal})`);
+  $('.dc_deco-zone').css('background-image', `url(https://rlacodud.github.io/Iphone14_pc/images/${bgVal}.jpg)`);
+  $('.dc_zone .dc_deco-zone .intro').addClass('off');
 
   notImg = false;
 })
