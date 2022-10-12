@@ -104,7 +104,6 @@ $('.dc_back-image--container label').off().on('click touchstart', function (e) {
 
   // 해당 이미지의 value값을 받아와
   let bgVal = $(this).children('img').attr("src");
-  console.log(bgVal)
 
   // dc_deco-zone의 백그라운드로 설정
   $('.dc_deco-zone').css('background-color', 'none');
@@ -198,7 +197,6 @@ $('.dc_sticker--container button').on('mousedown touchstart', function (e) {
   let stickerHeight = $(this).children('img').height();
   // ratio에 해당 sticker의 비율 대입
   ratio = stickerWidth / stickerHeight;
-  console.log(ratio)
 
   const frame = new Scene.Frame({
     transform: {
